@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./style01.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Roboto:wght@100&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<div class="icon-bar">
+  <a class="active" href="index .html" ><i class="fa fa-home"></i></a>
+<button class="tablink" onclick="openPage('GTR', this, 'yellow')">P1 GTR</button>
+<button class="tablink" onclick="openPage('LM', this, 'black')" id="defaultOpen">P1 LM</button>
+<button class="tablink" onclick="openPage('GT', this, 'blue')">P1 GT</button>
+
+<div id="GTR" class="tabcontent">
+  <h2>P1 GTR</h2>
+  <p> the P1 GTR went into production in 2015, after all the 375 standard P1s had been built, as a homage to its race-winning ancestor, the McLaren F1 GTR and were built, maintained and run by McLaren Special Operations.
+
+    The P1 GTR's hybrid engine is rated at 1,000 PS (735 kW; 986 hp), representing an 84 PS (62 kW; 83 hp) increase over the standard production P1, although McLaren did not disclose whether the power increase was from electrical boost or tuning the twin-turbocharged 3.8-litre V8. Performance figures remain unconfirmed. The weight of the P1 GTR was reduced by 50 kg (110 lb), achieving a power-to-weight ratio of 697 PS (513 kW; 687 hp) per 1 tonne (1.1 tons). This equates to a weight-to-power ratio of 1.44 kg (3.17 lb) per horsepower. The car also featured slick tyres, and had greater levels of performance, grip, aerodynamics and downforce in comparison to the road car. Featuring a new fixed ride height on race-prepared suspension, a fixed rear wing capable of using DRS, and a new exclusively designed exhaust made of titanium and inconel. Due to its fixed rear wing, the GTR generates 10% more downforce than the road legal P1. The P1 GTR has a kerb weight of 1,440 kg (3,175 lb) which includes the weight of the batteries.
+  
+  </p>
+</div>
+
+<div id="LM" class="tabcontent">
+  <h3>P1 LM</h3>
+  <p>The P1 LM has a total power output of 1,000 PS (735 kW; 986 hp) and 1,050 N⋅m (774 lb⋅ft) of torque, with 800 PS (588 kW; 789 hp) being delivered at 7,250 rpm and an additional 200 PS (147 kW; 197 hp) from its electric motor. The top speed is limited to 345 km/h (214 mph). The tyre specifications are 275/30/19 for the front tyres and 335/30/20 for the rear tyres.
+
+    At the 2016 Goodwood Festival of Speed, the prototype P1 LM, 'XP1 LM', set the fastest ever time for a road car up the Goodwood hillclimb, with a time of 47.07 seconds, driven by Kenny Bräck.
+    
+    On 27 April 2017, the prototype P1 LM, XP1 LM, continued its success on track, beating the road car lap record time at the Nürburgring Nordschleife, with a time of 6:43.22 using road legal Pirelli P Zero Trofeo R tyres but without a front number plate required for a car to be road legal. This lap time was once again set by Kenny Bräck, and announced on 26 May 2017.</p> 
+</div>
+
+<div id="GT" class="tabcontent">
+  <h4>P1 GT</h4>
+  <p>At the 2018 Goodwood Festival of Speed, Lanzante Motorsport, who had previously modified McLaren P1 GTRs to road legal specifications and developed the P1 LM, introduced a new special based on the P1 GTR. The new car, called the P1 GT, was commissioned by two different McLaren VIP customers; one from the United Arab Emirates and one from Japan. Only two were built. The P1 GT is inspired by the McLaren F1 GT homologation special from the 1990s, including more aggressive bodywork than the standard car. Exterior modifications include a longer rear section, a larger rear wing, a longer front splitter, vented front fenders, removal of front canards, quad exhaust system in place of the original dual outlet design and a modified rear diffuser. The interior features fixed sports seats and Alcantara upholstery in tan and green colour along with a racing steering wheel and carbon fibre bits while the exterior features Silverstone green bodywork paying homage to the original homologation special. Powertrain modifications and performance figures remain unknown but are likely to have been increased as compared to the standard car owing to the extensive modifications. </p>
+
+</div>
+
+
+  
+</div>
+</body>  
+</nav>
+
+
+<div>
+<h1>P1 video</h1>
+  <iframe width="1200" height="1000" src="https://www.youtube.com/embed/Z0UcVyoWPlM?playist=Z0UcVyoWPlM&loop=1&autoplay=1&mute=1&enablejsapi=1&widgetid=1  frameborder=" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+
+</div>
+
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+     
+  
+</html> 

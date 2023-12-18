@@ -1,0 +1,144 @@
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+body {
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+overflow: hidden;
+background-color: #fffdfd;
+}
+
+.topnav a {
+float: left;
+color: #fffdfd;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+
+.topnav a:hover {
+background-color:rgb(20, 55, 231);
+color: rgb(0, 0, 0);
+}
+
+.topnav a.active {
+background-color:rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: 14%;
+  color:rgb(241, 145, 0);
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* next button */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* hover*/
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0);
+}
+
+/* text */
+.text {
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Numbertext  */
+.numbertext {
+  color:rgb(255, 255, 255);
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* dot */
+.dot {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: 0 2px;
+  background-color:rgb(95, 42, 42);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.icon-bar {
+  width: 100%;
+  background-color:rgb(54, 54, 54);
+  overflow: auto;
+}
+
+.icon-bar a {
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: rgb(255, 255, 255);
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+.active {
+  background-color: rgb(27, 211, 42) ;
+}
